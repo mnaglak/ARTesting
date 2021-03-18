@@ -10,6 +10,7 @@
     <script src="OrbitControls.js"></script>
     <script>
       let scene, camera, renderer;
+
       function init() {
         scene = new THREE.Scene();
         scene.background = new THREE.Color(0xdddddd);
@@ -53,6 +54,8 @@
         renderer.render(scene,camera);
         requestAnimationFrame(animate);
       }
+
+      init();
     </script>
   </body>
 </html>
