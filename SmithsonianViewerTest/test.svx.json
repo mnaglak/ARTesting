@@ -1,45 +1,344 @@
 {
-    "asset": {
-        "type": "application/si-dpo-3d.document+json",
-        "version": "1.0",
-        "generator": "Cook",
-        "copyright": "(c) Smithsonian Institution. All rights reserved."
+  "asset": {
+    "type": "application/si-dpo-3d.document+json",
+    "version": "1.0",
+    "generator": "Voyager",
+    "copyright": "(c) Smithsonian Institution. All rights reserved."
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "units": "mm",
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        6
+      ],
+      "setup": 0
+    }
+  ],
+  "nodes": [
+    {
+      "translation": [
+        -0.028293394128959357,
+        0.13555910075022373,
+        0.13439944205835794
+      ],
+      "rotation": [
+        -0.377616746735998,
+        -0.09580406498448528,
+        -0.03931652969090187,
+        0.9201529134932053
+      ],
+      "name": "Camera",
+      "camera": 0
     },
-    "scene": 0,
-    "scenes": [
+    {
+      "rotation": [
+        0,
+        -0.10355775381151837,
+        0,
+        0.9946234421254674
+      ],
+      "name": "Lights",
+      "children": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "translation": [
+        0,
+        0,
+        2
+      ],
+      "rotation": [
+        0.4829741072455526,
+        -0.10707280931314123,
+        0.18809980282186348,
+        0.8484632516582726
+      ],
+      "scale": [
+        1,
+        0.9999999999999999,
+        1
+      ],
+      "name": "Key",
+      "light": 0
+    },
+    {
+      "rotation": [
+        0.3546969030895818,
+        0.16389300975709786,
+        -0.3861077033631851,
+        0.8356135648103293
+      ],
+      "scale": [
+        1,
+        0.9999999999999999,
+        1
+      ],
+      "name": "Fill #1",
+      "light": 1
+    },
+    {
+      "translation": [
+        0,
+        0,
+        1
+      ],
+      "rotation": [
+        0.9374013284601787,
+        -0.3018692929093914,
+        0.05322770161603092,
+        0.1652891139190696
+      ],
+      "name": "Fill #2",
+      "light": 2
+    },
+    {
+      "translation": [
+        1,
+        0,
+        -1
+      ],
+      "rotation": [
+        0.3732559778560458,
+        0.6426073095312873,
+        -0.5786062656733416,
+        0.33608125513815534
+      ],
+      "scale": [
+        1,
+        1,
+        0.9999999999999999
+      ],
+      "name": "Rim",
+      "light": 3
+    },
+    {
+      "name": "Coral_USNM_344",
+      "model": 0
+    }
+  ],
+  "cameras": [
+    {
+      "type": "perspective",
+      "perspective": {
+        "yfov": 52,
+        "znear": 0.1,
+        "zfar": 100000
+      }
+    }
+  ],
+  "lights": [
+    {
+      "color": [
+        1,
+        0.95,
+        0.9
+      ],
+      "intensity": 1,
+      "type": "directional",
+      "shadowEnabled": true
+    },
+    {
+      "color": [
+        0.9,
+        0.95,
+        1
+      ],
+      "intensity": 0.7,
+      "type": "directional",
+      "shadowEnabled": true
+    },
+    {
+      "color": [
+        0.8,
+        0.85,
+        1
+      ],
+      "intensity": 0.5,
+      "type": "directional"
+    },
+    {
+      "color": [
+        0.85,
+        0.9078313,
+        1
+      ],
+      "intensity": 0.6,
+      "type": "directional"
+    }
+  ],
+  "models": [
+    {
+      "units": "mm",
+      "translation": [
+        0.000881195068359375,
+        0.003301025151710865,
+        -0.0012452594669221696
+      ],
+      "boundingBox": {
+        "min": [
+          -0.06573724746704102,
+          -0.05001593101535041,
+          -0.046776764915539004
+        ],
+        "max": [
+          0.06397485733032227,
+          0.04341388071192868,
+          0.04926728384938334
+        ]
+      },
+      "derivatives": [
         {
-            "name": "Scene",
-            "units": "mm",
-            "nodes": [
-                0
-            ]
+          "usage": "Web3D",
+          "quality": "High",
+          "assets": [
+            {
+              "uri": "rockTest.glb",
+              "type": "Model",
+              "byteSize": 1592100,
+              "numFaces": 150000,
+              "imageSize": 4096
+            }
+          ]
         }
-    ],
-    "nodes": [
-        {
-            "name": "Coral_USNM_344",
-            "model": 0
+      ]
+    }
+  ],
+  "setups": [
+    {
+      "interface": {
+        "visible": false,
+        "logo": true,
+        "menu": true,
+        "tools": true
+      },
+      "reader": {
+        "enabled": false,
+        "position": "Overlay"
+      },
+      "viewer": {
+        "shader": "Default",
+        "exposure": 1,
+        "gamma": 2
+      },
+      "navigation": {
+        "enabled": true,
+        "autoZoom": true,
+        "autoRotation": false,
+        "lightsFollowCamera": true,
+        "type": "Orbit",
+        "orbit": {
+          "orbit": [
+            -44.625000000000014,
+            -11.888157894736835,
+            0
+          ],
+          "offset": [
+            5.883003112439056e-11,
+            2.7373967675936584e-10,
+            0.19297667209573247
+          ],
+          "minOrbit": [
+            -90,
+            null,
+            null
+          ],
+          "maxOrbit": [
+            90,
+            null,
+            null
+          ],
+          "minOffset": [
+            null,
+            null,
+            0.1
+          ],
+          "maxOffset": [
+            null,
+            null,
+            10000
+          ]
         }
-    ],
-    "models": [
-        {
-            "units": "mm",
-            "derivatives": [
-
-                {
-                    "usage": "Web3D",
-                    "quality": "High",
-                    "assets": [
-                        {
-                            "uri": "rockTest.glb",
-                            "type": "Model",
-                            "byteSize": 1592100,
-                            "numFaces": 150000,
-                            "imageSize": 4096
-                        }
-                    ]
-                }
-              ]
-          }
-    ]
+      },
+      "background": {
+        "style": "RadialGradient",
+        "color0": [
+          0.2,
+          0.25,
+          0.3
+        ],
+        "color1": [
+          0.01,
+          0.03,
+          0.05
+        ]
+      },
+      "environment": {
+        "index": 0
+      },
+      "language": {
+        "language": "EN"
+      },
+      "floor": {
+        "visible": false,
+        "position": [
+          0,
+          -25,
+          0
+        ],
+        "size": 50,
+        "color": [
+          0.6,
+          0.75,
+          0.8
+        ],
+        "opacity": 0.5,
+        "receiveShadow": false
+      },
+      "grid": {
+        "visible": true,
+        "color": [
+          0.5,
+          0.7,
+          0.8
+        ]
+      },
+      "tape": {
+        "enabled": false,
+        "startPosition": [
+          0,
+          0,
+          0
+        ],
+        "startDirection": [
+          0,
+          0,
+          0
+        ],
+        "endPosition": [
+          0,
+          0,
+          0
+        ],
+        "endDirection": [
+          0,
+          0,
+          0
+        ]
+      },
+      "slicer": {
+        "enabled": false,
+        "axis": "X",
+        "position": 0.5,
+        "inverted": false
+      }
+    }
+  ]
 }
