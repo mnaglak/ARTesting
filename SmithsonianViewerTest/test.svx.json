@@ -1,0 +1,45 @@
+{
+    "asset": {
+        "type": "application/si-dpo-3d.document+json",
+        "version": "1.0",
+        "generator": "Cook",
+        "copyright": "(c) Smithsonian Institution. All rights reserved."
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "name": "Scene",
+            "units": "mm",
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Coral_USNM_344",
+            "model": 0
+        }
+    ],
+    "models": [
+        {
+            "units": "mm",
+            "derivatives": [
+
+                {
+                    "usage": "Web3D",
+                    "quality": "High",
+                    "assets": [
+                        {
+                            "uri": "rockTest.glb",
+                            "type": "Model",
+                            "byteSize": 1592100,
+                            "numFaces": 150000,
+                            "imageSize": 4096
+                        }
+                    ]
+                }
+              ]
+          }
+    ]
+}
